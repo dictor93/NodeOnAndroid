@@ -3,7 +3,7 @@ const port = 3000;
 const requestHandler = (request, response) => {
     if(request.url === "/favicon.ico"){
         console.log("Client need favicon");
-    }else
+    }else{
         console.log(request.url);
         response.end('Hello Node.js Server!');
     }
